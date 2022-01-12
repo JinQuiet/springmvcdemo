@@ -1,0 +1,16 @@
+.vscode
+.classpath
+.settings
+.project
+.sts4-cache
+
+*.iml
+.classpath
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.ipr
+
+/bin
+/target
