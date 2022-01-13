@@ -38,7 +38,8 @@ public class RpsController {
     }
 
     @RequestMapping(value = "/rps/{action}", method = RequestMethod.GET)    
-    public ModelAndView rpsActionPlayerDriven(@PathVariable("action") String action) {
+    public ModelAndView rpsActionPlayerDriven(
+            @PathVariable("action") String action) {
 
         ModelAndView mav = new ModelAndView("rps");
 
@@ -50,6 +51,4 @@ public class RpsController {
 
         return mav;
     }
-
-
 }
