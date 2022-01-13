@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>My app</title>
+</head>
+
+<body>
+<p>== Spring MVC "Rock Paper Scissors" Demo ==</p>
+
+<p>Chose your champion</p>
+    <a th:href="@{/rps/ROCK}">ROCK</a>
+    <a th:href="@{/rps/PAPER}">PAPER</a>
+    <a th:href="@{/rps/SCISSORS}">SCISSORS</a>
+
+    <hr />
+<ul>
+    <li>Player Action :: <span th:text="${playerAction}" /></li>
+    <li>Opponent Action :: <span th:text="${opponentAction}" /></li>
+</ul>
+
+    <hr />
+</b>Game Result :: <span th:text="${rpsResult}" /></b>
+
+</body>
+
+</html>
